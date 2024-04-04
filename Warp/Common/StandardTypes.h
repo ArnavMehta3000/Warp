@@ -1,33 +1,30 @@
 #pragma once
 #include <cstdint>
-
+#include <limits>
 namespace Warp
 {
-    using I8 = int8_t;
-	using I16 = int16_t;
-	using I32 = int32_t;
-	using I64 = int64_t;
+    using i8  = int8_t;
+	using i16 = int16_t;
+	using i32 = int32_t;
+	using i64 = int64_t;
 
-	using U8  = uint8_t;
-	using U16 = uint16_t;
-	using U32 = uint32_t;
-	using U64 = uint64_t;
+	using u8  = uint8_t;
+	using u16 = uint16_t;
+	using u32 = uint32_t;
+	using u64 = uint64_t;
 
-	using U32Max = uintmax_t;
-	using I32Max = intmax_t;
+    constexpr u64 u64max = std::numeric_limits<u64>::max();
+	constexpr u32 u32max = std::numeric_limits<u32>::max();
+	constexpr u16 u16max = std::numeric_limits<u16>::max();
+	constexpr u8  u8max  = std::numeric_limits<u8>::max();
 
-    constexpr U64 U64InvalidId = std::numeric_limits<U64>::max();
-	constexpr U32 U32InvalidId = std::numeric_limits<U32>::max();
-	constexpr U16 U16InvalidId = std::numeric_limits<U16>::max();
-	constexpr U8  U8InvalidId  = std::numeric_limits<U8>::max();
+	constexpr i64 i64max = std::numeric_limits<i64>::max();
+	constexpr i32 i32max = std::numeric_limits<i32>::max();
+	constexpr i16 i16max = std::numeric_limits<i16>::max();
+	constexpr i8  i8max  = std::numeric_limits<i8>::max();
 
-	constexpr I64 I64InvalidId = std::numeric_limits<I64>::max();
-	constexpr I32 I32InvalidId = std::numeric_limits<I32>::max();
-	constexpr I16 I16InvalidId = std::numeric_limits<I16>::max();
-	constexpr I8  I8InvalidId  = std::numeric_limits<I8>::max();
+	using f32 = float;
+	using f64 = double;
 
-	using F32 = float;
-	using F64 = double;
-
-	using Byte = uint8_t;
+	using byte = uint8_t;
 }
