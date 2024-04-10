@@ -1,5 +1,6 @@
 #pragma once
 #include "Warp/Common/WarpWin.h"
+#include <string>
 
 namespace Warp
 {
