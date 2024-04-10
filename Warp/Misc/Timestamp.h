@@ -5,7 +5,9 @@
 
 namespace Warp
 {
-    /**
+	using namespace Types;
+
+    	/**
 	* @brief Timestamp utility class, wraps chrono::system_clock::time_point
 	*/
 	class Timestamp
