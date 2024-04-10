@@ -1,7 +1,8 @@
 #pragma once
 #include <cstdint>
 #include <limits>
-namespace Warp
+
+namespace Warp::Types
 {
 	using i8  = int8_t;
 	using i16 = int16_t;
