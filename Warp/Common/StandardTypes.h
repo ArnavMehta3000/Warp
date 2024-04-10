@@ -3,17 +3,17 @@
 #include <limits>
 namespace Warp
 {
-    using i8  = int8_t;
+	using i8  = int8_t;
 	using i16 = int16_t;
 	using i32 = int32_t;
 	using i64 = int64_t;
-
+	
 	using u8  = uint8_t;
 	using u16 = uint16_t;
 	using u32 = uint32_t;
 	using u64 = uint64_t;
 
-    constexpr u64 u64max = std::numeric_limits<u64>::max();
+    	constexpr u64 u64max = std::numeric_limits<u64>::max();
 	constexpr u32 u32max = std::numeric_limits<u32>::max();
 	constexpr u16 u16max = std::numeric_limits<u16>::max();
 	constexpr u8  u8max  = std::numeric_limits<u8>::max();
