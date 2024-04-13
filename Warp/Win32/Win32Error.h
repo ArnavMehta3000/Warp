@@ -2,14 +2,14 @@
 #include "Warp/Common/WarpWin.h"
 #include <string>
 
-namespace Warp
+namespace Warp::Win32
 {
-    /**
+	/**
 	* @brief Get Win32 error string from error code 
 	* @param errorCode Error code from GetLastError() or HRESULT to convert
 	* @return std::string representation of Win32 error
 	*/
-	inline std::string GetWin32ErrorString(DWORD errorCode)
+	inline std::string GetErrorString(DWORD errorCode)
 	{
 		char errorString[MAX_PATH];
 		::FormatMessageA(FORMAT_MESSAGE_FROM_SYSTEM,

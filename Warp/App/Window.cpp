@@ -1,5 +1,5 @@
 #include "Window.h"
-#include <Warp/Assert/Win32Error.h>
+#include <Warp/Win32/Win32Error.h>
 #include <Warp/String/StringConverter.h>
 #include <assert.h>
 
@@ -142,6 +142,13 @@ namespace Warp
 		case WM_DESTROY:
 			::DestroyWindow(m_hWnd);
 			break;
+
+		case WM_SIZE:
+		{
+			m_width = LOWORD(lParam);
+			m_height = HIWORD(lParam);
+			break;
+		}
 		}
 
 		// Custom message handler assigned, use it
