@@ -27,9 +27,11 @@ namespace Warp
 		void Close();
 		bool WantsToClose() const;
 
+
 		LRESULT	MessageHandler(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
 		static LRESULT WINAPI WndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
 
+		inline HWND GetHandle() const { return m_hWnd; }
 		inline constexpr bool IsValid() const { return m_hWnd != nullptr; }
 		inline operator HWND() const { return m_hWnd; }
 
