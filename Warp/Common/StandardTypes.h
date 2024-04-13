@@ -1,7 +1,8 @@
 #pragma once
 #include <cstdint>
 #include <limits>
-
+#undef min
+#undef max
 namespace Warp::Types
 {
 	using i8  = int8_t;
