@@ -33,7 +33,8 @@ namespace Warp
 
 		inline HWND GetHandle() const { return m_hWnd; }
 		inline constexpr bool IsValid() const { return m_hWnd != nullptr; }
-		inline operator HWND() const { return m_hWnd; }
+		inline Types::u32 GetWidth() const { return m_width; }
+		inline Types::u32 GetHeight() const { return m_height; }
 
 	private:
 		std::wstring m_title;

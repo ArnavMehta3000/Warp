@@ -142,6 +142,13 @@ namespace Warp
 		case WM_DESTROY:
 			::DestroyWindow(m_hWnd);
 			break;
+
+		case WM_SIZE:
+		{
+			m_width = LOWORD(lParam);
+			m_height = HIWORD(lParam);
+			break;
+		}
 		}
 
 		// Custom message handler assigned, use it
