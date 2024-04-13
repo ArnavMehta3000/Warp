@@ -2,7 +2,8 @@
 
 namespace Warp
 {
-     * @brief Template class for creating a singleton instance of a class.
+	/**
+	 * @brief Template class for creating a singleton instance of a class.
 	 * @tparam T The type of the class to be made a singleton.
 	 */
 	template <typename T>
